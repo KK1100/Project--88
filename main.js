@@ -80,6 +80,8 @@ function my_keydown(e)
 			ball_y = ball_y - block_image_height;
 			console.log("block image height = " - block_image_height);
 			console.log("When Up arrow key is pressed, X =  " - ball_y - " , Y = "-ball_y);
+			canvas. remove(ball_obj);
+			new_image();
 		              }
 	}
 
@@ -90,6 +92,8 @@ function my_keydown(e)
 			ball_y = ball_y + block_image_height;
 			console.log("block image height = " + block_image_height);
 		    console.log("When Down arrow key is pressed, X =  " + ball_y + " , Y = "+ball_y);
+			canvas. remove(ball_obj);
+			new_image();
 		               }
 	}
 
@@ -100,7 +104,9 @@ function my_keydown(e)
 			ball_x = ball_x - block_image_width;
 			console.log("block image width = " - block_image_width);
 			console.log("When left arrow key is pressed, Y =  " - ball_x - " , X = "-ball_x);	
-		}
+		    canvas. remove(ball_obj);
+			new_image();
+		}   
 	}
 
 	function right()
@@ -110,7 +116,8 @@ function my_keydown(e)
 			ball_x = ball_x + block_image_width;
 			console.log("block image width = " + block_image_width);
 		    console.log("When Right arrow key is pressed, Y =  " + ball_x + " , X = "+ball_x);
-
+            canvas. remove(ball_obj);
+			new_image();
 		}
 	}
 	
